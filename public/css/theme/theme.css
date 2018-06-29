@@ -1,0 +1,17 @@
+.infos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.portfolio-item {
+    margin: 10px 0;
+}
+
+h4.card-title {
+    font-size: 18px;
+}
+
+p.card-text {
+    font-size: 12px;
+}
+

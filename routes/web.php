@@ -11,13 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/nha-dat/{id}', 'HomeController@detail')->name('detail');
+Route::get('/nha-dat/thanh-pho/{id}', 'HomeController@city')->name('city');
 
 
 Route::group(['prefix' => 'admin'], function () {
